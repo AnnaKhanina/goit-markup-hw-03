@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Главная</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,8 +22,8 @@
             <a class="header-logo" lang="en" href="">Web<span class="header-web-color">Studio</span></a>
             <ul class="header-list list">
                 <li class="header-item"><a class="header-link" href="./studio.html">Студия</a></li>
-                <li class="header-item"><a class="header-link" href="./portfolio.html">Портфолио</a></li>
-                <li class="header-item"><a class="header-link" href="">Контакты</a></li>
+                <li class="header-item"><a class="header-link current" href="./portfolio.html">Портфолио</a></li>
+                <li class="header-item"><a class="header-link" href="./contacts.html">Контакты</a></li>
             </ul>
         </nav>
 
@@ -35,78 +35,62 @@
 
     <!--hero-->
     <main>
-        <section class="hero">
-            <h1 class="hero-title">Эффективные решения<br />
-                для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
-        </section>
-
-        <!--особенности-->
-        <section class="features">
+        <!--портфолио-->
+        <section class="portfolio">
             <h2 class="visually-hidden">Фильтры</h2>
-            <ul class="features-list list">
-                <li class="features-item">
-                    <h3 class="features-title">Внимание к деталям</h3>
-                    <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию
-                        позиции.</p>
-                </li>
-                <li class="features-item">
-                    <h3 class="features-title">Пунктуальность</h3>
-                    <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет
-                        за собой.</p>
-                </li>
-                <li class="features-item">
-                    <h3 class="features-title">Планирование</h3>
-                    <p class="features-text">Равным образом консультация с широким активом в значительной степени
-                        обуславливает.</p>
-                </li>
-                <li class="features-item">
-                    <h3 class="features-title">Современные технологии</h3>
-                    <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых
-                        заданий.</p>
-                </li>
+            <ul class="portfolio-list list">
+                <li class="portfolio-item"><button type="button" class="portfolio-btn">Все</button></li>
+                <li class="portfolio-item"><button type="button" class="portfolio-btn">Веб-сайты</button></li>
+                <li class="portfolio-item"><button type="button" class="portfolio-btn">Приложения</button></li>
+                <li class="portfolio-item"><button type="button" class="portfolio-btn">Дизайн</button></li>
+                <li class="portfolio-item"><button type="button" class="portfolio-btn">Маркетинг</button></li>
             </ul>
-        </section>
-
-        <!--чем мы занимаемся-->
-        <section class="employment">
-            <h2 class="title">Чем мы занимаемся</h2>
-            <ul class="employment-list list">
-                <li class="employment-item">
-                    <img src="./images/whatarewedoing(1).jpg" alt="работа с цветом" width="370" height="294" />
+            <!--проекты-->
+            <ul class="projects-list list">
+                <li class="projects-item">
+                    <img src="./images/project1.jpg" alt="ноутбук" width="370" height="294">
+                    <h3 class="about-title">Технокряк</h3>
+                    <p class="about-after-title">Веб-сайт</p>
                 </li>
-                <li class="employment-item">
-                    <img src="./images/whatarewedoing(2).jpg" alt="программирование" width="370" height="294" />
+                <li class="projects-item">
+                    <img src="./images/project2.jpg" alt="баскетбол" width="370" height="294">
+                    <h3 class="about-title" lang="en">Постер New Orlean vs Golden Star</h3>
+                    <p class="about-after-title">Дизайн</p>
                 </li>
-                <li class="employment-item">
-                    <img src="./images/whatarewedoing(3).jpg" alt="мобильная версия" width="370" height="294" />
+                <li class="projects-item">
+                    <img src="./images/project3.jpg" alt="ресторан морепродуктов" width="370" height="294">
+                    <h3 class="about-title" lang="en">Ресторан Seafood</h3>
+                    <p class="about-after-title">Приложение</p>
                 </li>
-            </ul>
-        </section>
-
-        <!--наша команда-->
-        <section class="team">
-            <h2 class="title">Наша команда</h2>
-            <ul class="team-list list">
-                <li class="team-item">
-                    <img src="./images/ourteam(4).jpg" alt="продукт-дизайнер" width="270" height="260" />
-                    <h3 class="team-title">Игорь Демьяненко</h3>
-                    <p class="team-text" lang="en">Product Designer</p>
+                <li class="projects-item">
+                    <img src="./images/project4.jpg" alt="наушники" width="370" height="294">
+                    <h3 class="about-title" lang="en">Проект Prime</h3>
+                    <p class="about-after-title">Маркетинг</p>
                 </li>
-                <li class="team-item">
-                    <img src="./images/ourteam(3).jpg" alt="фронтэнд разработчик" width="270" height="260" />
-                    <h3 class="team-title">Ольга Репина</h3>
-                    <p class="team-text" lang="en">Frontend Developer</p>
+                <li>
+                    <img src="./images/project5.jpg" alt="коробки" width="370" height="294">
+                    <h3 class="about-title" lang="en">Проект Boxes</h3>
+                    <p class="about-after-title">Приложение</p>
                 </li>
-                <li class="team-item">
-                    <img src="./images/ourteam(2).jpg" alt="маркетинг" width="270" height="260" />
-                    <h3 class="team-title">Николай Тарасов</h3>
-                    <p class="team-text" lang="en">Marketing</p>
+                <li>
+                    <img src="./images/project6.jpg" alt="компьютер аймак" width="370" height="294">
+                    <h3 class="about-title" lang="en">Inspiration has no Borders</h3>
+                    <p class="about-after-title">Веб-сайт</p>
                 </li>
-                <li class="team-item">
-                    <img src="./images/ourteam(1).jpg" alt="UI дизайнер" width="270" height="260" />
-                    <h3 class="team-title">Михаил Ермаков</h3>
-                    <p class="team-text" lang="en">UI Designer</p>
+                <li class="projects-item">
+                    <img src="./images/project7.jpg" alt="книга" width="370" height="294">
+                    <h3 class="about-title" lang="en">Издание Limited Edition</h3>
+                    <p class="about-after-title">Дизайн</p>
+                </li>
+                <li class="projects-item">
+                    <img src="./images/project8.jpg" alt="бирка" width="370" height="294">
+                    <h3 class="about-title" lang="en">Проект LAB</h3>
+                    <p class="about-after-title">Маркетинг</p>
+                </li>
+                <li class="projects-item">
+                    <img src="./images/project9.jpg" alt="человек работает за ноутбуком" width="370" height="294">
+                    <h3 class="about-title" lang="en">Growing Business</h3>
+                    <p class="about-after-title">Приложение</p>
                 </li>
             </ul>
         </section>
@@ -114,7 +98,7 @@
 
     <!--подвал-->
     <footer class="footer">
-        <a class="footer-logo" lang="en" href="">Web<span class="web-color">Studio</span></a>
+        <a class="footer-logo" lang="en" href="">Web<span class="footer-web-color">Studio</span></a>
 
         <address>
             <ul class="address-list list">
@@ -126,7 +110,7 @@
                     <a class="link-mail" href="mailto:info@devstudio.com">info@example.com</a>
                 </li>
                 <li class="address-item">
-                    <a class="link-tel" href="tel.:+380961111111"> +38 099 111 11 11</a>
+                    <a class="link-tel" href="tel.:+380961111111">+38 099 111 11 11</a>
                 </li>
             </ul>
         </address>
