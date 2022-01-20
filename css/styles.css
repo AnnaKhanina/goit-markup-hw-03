@@ -6,6 +6,20 @@
   --background-color: #2f303a;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -21,6 +35,14 @@ a {
 
 button {
   cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;  
 }
 
 .visually-hidden {
@@ -44,11 +66,21 @@ button {
   color: var(--header-text-color);
 }
 
-* {
-  box-sizing: border-box;
+/*---------header------------*/
+/*.header { 
+  padding-top: 24px;
+  padding-bottom: 25px;
+}*/
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
-/*---------header------------*/
+.navigation {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo {
   font-family: Raleway;
@@ -57,13 +89,17 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  
 }
 
 .header-web-color {
   color: var(--header-text-color);
 }
 
+
+
 .header-list {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -100,7 +136,7 @@ button {
   color: var(--accent-color);
 }
 
-.header-link[href="./portfolio.html"] {
+.header-link.current[href="./portfolio.html"] {
   color: var(--accent-color);
 }
 
@@ -133,6 +169,11 @@ button {
 
 /*----features-----*/
 
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-title {
   font-weight: bold;
   font-size: 14px;
@@ -149,6 +190,12 @@ button {
   letter-spacing: 0.03em;
   color: var(--link-list-color);
 }
+
+/*---------занятость------------*/
+
+/*.employment {
+  padding-bottom: 94px;
+}*/
 
 /*---------наша команда---------*/
 
@@ -217,7 +264,7 @@ button {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 2.58;
+  letter-spacing: 0.03;
   color: var(--accent-color);
 }
 
