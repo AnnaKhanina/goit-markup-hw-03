@@ -265,11 +265,13 @@ button {
 }
 
 .team-item {
-  margin-top: 0;
+  /*margin-top: 0;
+  margin-right: 30px;*/
+  width: ((100% - 90px) / 4);
   margin-right: 30px;
 }
 
-.team-item:nth-child(2n) {
+.team-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -345,7 +347,8 @@ button {
 }
 
 .projects-item {
-  margin-top: 0;
+  width: ((100% -60px) / 3);
+  /*margin-top: 0;*/
   margin-right: 30px;
   margin-bottom: 30px;
 }
