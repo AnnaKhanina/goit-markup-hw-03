@@ -214,6 +214,7 @@ button {
 
 .features-item {
   width: 270px;
+  color: #f71070;
 }
 
 .features-title {
@@ -265,8 +266,6 @@ button {
 }
 
 .team-item {
-  /*margin-top: 0;
-  margin-right: 30px;*/
   width: ((100% - 90px) / 4);
   margin-right: 30px;
 }
