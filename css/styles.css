@@ -204,10 +204,6 @@ button {
 
 /*----features-----*/
 
-.features {
-  padding-top: 94px;
-}
-
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -260,7 +256,6 @@ button {
 /*---------team---------*/
 
 .team {
-  padding-bottom: 50px;
   background-color: var(--background-color-secondary);
 }
 
